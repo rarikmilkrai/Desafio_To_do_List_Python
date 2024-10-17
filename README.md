@@ -1,4 +1,3 @@
-```markdown
 # Desafio_To_do_List_Python
 
 Este projeto é uma aplicação de lista de tarefas desenvolvida em Python usando
