@@ -1,6 +1,3 @@
-// URL da API
-//const apiUrl = 'http://127.0.0.1:5000/tasks';
-// URL da API
 const apiUrl = 'http://192.168.10.7:5000/tasks';
 
 // Carrega todas as tarefas na inicialização
@@ -8,7 +5,6 @@ window.onload = () => {
     loadTasks();
 };
 
-// Função para carregar as tarefas
 function loadTasks() {
     fetch(apiUrl)
         .then(response => response.json())
@@ -40,7 +36,6 @@ function loadTasks() {
         });
 }
 
-// Função para adicionar uma nova tarefa
 document.getElementById('add-task-btn').addEventListener('click', () => {
     const taskTitle = document.getElementById('task-input').value.trim();
 
@@ -63,11 +58,10 @@ document.getElementById('add-task-btn').addEventListener('click', () => {
     .then(response => response.json())
     .then(() => {
         document.getElementById('task-input').value = '';  // Limpa o campo de entrada
-        loadTasks();  // Recarrega as tarefas
+        loadTasks();
     });
 });
 
-// Função para completar uma tarefa
 function completeTask(id) {
     fetch(`${apiUrl}/${id}`, {
         method: 'PUT',
@@ -76,13 +70,13 @@ function completeTask(id) {
         },
         body: JSON.stringify({ status: 'completa' })
     })
-    .then(() => loadTasks());  // Recarrega as tarefas
+    .then(() => loadTasks());  
 }
 
-// Função para deletar uma tarefa
+
 function deleteTask(id) {
     fetch(`${apiUrl}/${id}`, {
         method: 'DELETE'
     })
-    .then(() => loadTasks());  // Recarrega as tarefas
+    .then(() => loadTasks());  
 }
