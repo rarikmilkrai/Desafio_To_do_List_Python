@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "ddd5ddbd-45a4-4b5b-b183-086d76c9a548",
+		"name": "To_Do_List_Python",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24227684"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://54.233.7.48:5000/tasks",
+					"protocol": "http",
+					"host": [
+						"54",
+						"233",
+						"7",
+						"48"
+					],
+					"port": "5000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"tarefa3\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://54.233.7.48:5000/tasks",
+					"protocol": "http",
+					"host": [
+						"54",
+						"233",
+						"7",
+						"48"
+					],
+					"port": "5000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Status da Tarefa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"status\": \"finalizado com certeza\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://54.233.7.48:5000/tasks/<id_tarefa>",
+					"protocol": "http",
+					"host": [
+						"54",
+						"233",
+						"7",
+						"48"
+					],
+					"port": "5000",
+					"path": [
+						"tasks",
+						"<id_tarefa>"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar uma Tarefa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://54.233.7.48:5000/tasks/<id_tarefa>",
+					"protocol": "http",
+					"host": [
+						"54",
+						"233",
+						"7",
+						"48"
+					],
+					"port": "5000",
+					"path": [
+						"tasks",
+						"<id_tarefa>"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
