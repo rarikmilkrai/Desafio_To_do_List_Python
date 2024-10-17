@@ -6,7 +6,7 @@ Flask para o back-end e HTML/CSS/JavaScript para o front-end.
 A aplicação permite que os usuários adicionem, completem e excluam tarefas,
 armazenando-as de forma persistente.
 
-## Atualmente, o projeto está hospedado em uma instância EC2 da AWS, onde o código foi inserido usando boas práticas de CI/CD.
+# Atualmente, o projeto está hospedado em uma instância EC2 da AWS, onde o código foi inserido usando boas práticas de CI/CD.
 
 ## Tecnologias Utilizadas
 
